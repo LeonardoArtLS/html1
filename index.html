@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html> <!-- abre a tag-->
+<html lang="pt-BR"> <!-- abre a tag e o lang seleciona o idioma do site para a tradução automatica do google-->
 	<head>
+		<!-- o charset vai selecionar o teclado das letras do site-->
 		<meta charset="UTF-8">
+		<!-- viewport pega o tamanho da tela da pessoa para ser o tamanho do site-->
 		<meta name="viewport"	content="width=device-width, initial-scale=1.0">
 		<title>Meu Site</title>
 	</head>
 	
 	<body>
+		<!-- Da pra pular linha usando o <p></p> -->
 		<!-- TAGS DE TITULO -->
 		<h1>Hello World</h1>
 		<h2>Titulo 2</h2>
@@ -14,13 +17,144 @@
 		<h4>Titulo 4</h4>
 		<h5>Titulo 5</h5>
 		<h6>Titulo 6</h6>
-		
+		<!-- <br> pula linha -->
 		<!-- TAGS DE PARÁGRAFO -->
-		<p>Não obstante, a estrutura atual da organização cumpre um papel essencial na formulação do fluxo de informações.</p>
+		<p>Não obstante, <br> a estrutura atual da organização cumpre um papel essencial na formulação do fluxo de informações.</p>
 		
 		<!-- TAG DE HIPERLINK NAVEGAÇÂO INTERNA -->
 		<a href="pagina.html">Meu Link interno</a>
 		
+		<!-- TAG DE NAVEGAÇÃO EXTERNA -->
+		<a href="https://www.chief.delivery" target="_blank">Meu link Externo</a>
+	
+	<!-- atributo target
+		_blank -> abre em uma nova janela ou aba
+		_self -> abre na própria janela (comportamento padrão)
+		_parent -> abre na janela pai
+		_top -> abre no documento do iframe
+		-->
 		
-	</body>
+		<!-- TAG PARA ADICIONAR IMAGEM -->
+		<!-- src significa source -->
+		<img src="ovelha.png" width="200" alt="ovelha do lero lero">
+		
+		<!-- TAG PARA ADICIONAR IMAGEM EXTERNA -->
+		<img src="https://static.ric.com.br/uploads/2023/07/ovelha-urso-polar-sc-600x600.jpg" width="200" title="Ovelha">
+															<!--title mostra oque esta escrito quando passar o mouse em cima-->
+		<!--o style="color:<cor>" seleciona a cor do texto-->
+	<h4 style="color:red">TITULO COM A COR VERMELHA</h4>
+	<!--Se escrever só p e dar tab já escreve o <p></p> e os outros comandos também-->
+<p>Lorem*4>br</p>
+<!--o comando de cima faz um texto aleatório ai o *4 fala quantos paragrafos serão e o >br da paragrafo só dar tab ali que cria isso(da para usar somente o Lorem que cria só um paragrafo)-->	
+
+<hr>
+<!--o <hr> cria uma linha no meio do site-->
+
+<h5>Teste de novo titulo</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa impedit, eum tempore nulla laborum velit nam, excepturi facilis rem illo nemo minima. Repellendus quisquam atque totam, nobis natus excepturi officia.</p>
+	
+	
+
+
+<!-- Cntrl + ; cria um comentario rapidamente -->
+
+
+<!-- TAGS ESTRUTURAIS -->
+
+<!-- div serve como uma caixa, uma divisão-->
+<div style="background:orange">
+	<h1>teste</h1>
+</div>
+
+<!-- cabeçalho: tag para colocar conteúdos iniciais de titulo, data, preview -->
+<header>
+	Noticia
+</header>
+
+<!-- criação de artigos -->
+<article>
+
+</article>
+
+<!-- Usado para separar as seções -->
+<section>
+
+</section>
+
+<!-- rodapé do site -->
+<footer></footer>
+
+<!-- Tags de mídia -->
+<!-- para botar música, o controls serve para mostrar o botão de pausa e tals da música no site, autoplay faz a música tocar sozinha quando o site carregar -->
+<audio src="https://65381g.ha.azioncdn.net/8/8/f/d/ogrilo-serenata-existencialista-1b77f36e.mp3"  controls autoplay ></audio>
+
+<!-- Audio com tipos de arquivos diferentes (usado por conta dos varios tipos de sistemas como apple, windows, linux e alguns não reconhecem o mp3 e tal) -->
+<audio>
+	<source src="arquivo.mp3" type="audio/mpeg">
+	<sorce src="arquivo.ogg" type="audio/ogg">
+</audio>
+
+
+<!-- Tags de video -->
+
+<video src="https://v4.cdnpk.net/videvo_files/video/free/video0483/large_watermarked/_import_60d962f06b3ef8.86089157_FPpreview.mp4" controls width="320"></video>
+
+<!-- Mesma coisa que o audio -->
+<video>
+	<source src="">
+	<source src="">
+</video>
+
+
+
+<!-- Lista não ordenada -->
+<!-- <li> = list item -->
+
+<ul>
+	<li>Banana</li>
+	<li>Maçã</li>
+	<li>Laranja</li>
+	<li>Pão</li>
+	<li>Amendoim</li>
+	<li>Torresmo</li>
+	<li>Limão</li>
+	<li>Carne</li>
+	<li>Carvão</li>
+	<li>Sal Grosso</li>
+</ul>
+
+
+<!-- ul>li*10 faz essa lista aqui em baixo rapidamente -->
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+
+<!-- lista não ordenada -->
+<ol>
+	<li>Dó</li>
+	<li>Ré</li>
+	<li>Mi</li>
+	<li>Fa</li>
+	<li>Sol</li>
+	<li>La</li>
+	<li>Si</li>
+</ol>
+
+
+
+
+
+
+
+</body>
 </html> <!-- fecha a tag -->

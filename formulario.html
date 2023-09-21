@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- 
+        CRUD:
+
+        Create -> Criar
+        Ready -> Leitura
+        Update -> Atualização
+        Delete -> Deletar        
+     -->
+
+
+     <!-- 
+        atributo action -> caminho para onde vai o requisito (Para onde vai ser enviado os dados preenchidos do formulário)
+        method -> diz o modo de envio das informações pelo navegador
+        GET -> solicita dados. quando envio, os dados são exibidos na URL do navegador
+        Post -> envia dados e não exibe na URL
+     -->
+     <!-- autocomplete vai pegar as coisas já salvas no cache do navegador 
+        e já preenche os dados do site, se colocar on liga e off desliga (É RECOMENDADO DEIXAR OFF) -->
+     <form action="contato.php" method="post" autocomplete="on">
+        <!-- 
+            para o click no label selecionar o campo
+            o valor de for e id tem que ser iguais
+         -->
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nomeCompleto" id="nomeCompleto">
+     
+        <label for="">E-mail</label>
+        <input type="text" name="email" placeholder="Informe um e-mail válido">
+    
+         <!-- input para email -->
+         <input type="email" name="email" placeholder="E-mail">
+
+         <!-- Campo numerico -->
+         <input type="number" name="numero" placeholder="Número">
+
+         <!-- campo de senha -->
+         <input type="password" name="senha" placeholder="Senha">
+
+         <br>
+         <!-- input file para enviar apenas 1 arquivo -->
+         <input type="file" name="arquivo">
+         <!-- input file com multiple para enviar varios arquivos -->
+         <input type="file" name="arquivos" multiple>
+
+         <!-- select, lista de dados agrupados -->
+         <select name="estados" required>
+            <option value="">Selecione um estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PR">Paraná</option>
+        </select>
+        <!-- required serve pra ser obrigatório ter alguma coisa para enviar
+        e o valor="" do Selecione um estado não envia se selecionar ele por conta que
+        ele não tem nenhum valor;
+        Caso queira da para usar o multiple que serve para poder selecionar vários -->
+
+
+        <!-- campo oculto -->
+        <input type="hidden" name="id" value="1234">
+            <!-- uma informação que quer mandar para o banco de dados mas não quer
+            mostrar para o usuário -->
+
+        <!-- input para mostrar imagens -->
+       <!-- <input type="image" src="./img/ovelha.png" alt=""> -->
+       
+       
+       <br>
+
+        <!-- input para selecionar cor -->
+        <input type="color" name="cor">
+
+
+        <!-- TEXTAREA, campo para texto longo, ele permite quebra de linha -->
+        <textarea name="texto" cols="30" rows="10" placeholder="Digite um texto"></textarea>
+
+        <!-- data list - lista de dados -->
+        <input type="text" name="listaDados" list="lista">
+        <datalist id="lista">
+            <option value="item1">Item 1</option>
+            <option value="item2">Item 2</option>
+            <option value="item3">Item 3</option>
+        </datalist>
+
+        <!-- checkbox lista de dados onde posso marcar vários itens -->
+        <input type="checkbox" name="cores[]" id="vermelho"><label for="vermelho" value="vermelho" checked>Vermelho</label>
+        <input type="checkbox" name="cores[]" id="amarelo" value="Amarelo"> <label for="amarelo">Amarelo</label>
+        <input type="checkbox" name="cores[]" id="verde" value="Verde"> <label for="verde">Verde</label>
+        <!-- tem que usar o [] para criar um array ali por conta que se não um substitui o outro 
+             checked deixa já seleciona quando abre o site/aba                                  -->
+
+        <!-- radio permite a marcação de apenas um item da lista, desde que o name deles sejam iguais -->
+        <br>   
+        <!-- type = tipo | name = parametro | value = valor // liquido=agua -->
+        <!-- id=agua faz com que quando clicar em cima da palavra agua seleciona a caixa agua -->
+        <input type="radio" name="Liquido" value="agua" id="agua"><label for="agua">Água</label>
+        <input type="radio" name="Liquido" value="suco"><label for="suco">Suco</label>
+        <input type="radio" name="Liquido" value="cafe"><label for="cafe">Café</label>
+        
+        <br>
+            <label for="">Campo com valor fixo</label>
+            <!--
+             value="valor" -> preenche um valor padrão
+             required -> marca o campo como obrigatório
+             readonly -> apenas leitura (o campo é enviado)
+             disable -> desabilita o campo (o campo não é enviado no formulário)
+            -->
+            <input type="text" name="teste1" value="Valor fixo" required disable>
+        <br>
+        
+        <label for="">Valor minimo e máximo</label>
+        <input type="number" min="10" max="25">
+        
+        <br>
+        <label for="">Tamanho máximo de caracteres</label>
+        <input type="text" name="maximo" maxlength="8">
+        
+        
+        <!-- campo submit -->
+        <button type="submit">ENVIO COM BUTTON</button>
+        <!-- se tiver o type="submit" ele vai servir igual como o enviar normal -->
+
+        
+
+         <input type="submit" value="Enviar">
+    </form>
+     <!-- form e tab/enter escreve mais rapidamente-->
+    <!--
+     o for serve para quando clicar em cima do label selecionar para escrever dentro da "caixa"
+     o label escreve do lado da "caixa"
+     o placeholder escreve dentro da "caixa"  
+     o input serve para enviar o formulário para o banco de dados         
+    -->
+
+
+
+
+
+</body>
+</html>
