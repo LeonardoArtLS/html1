@@ -29,7 +29,7 @@
             para o click no label selecionar o campo
             o valor de for e id tem que ser iguais
          -->
-        <label for="nome">Nome Completo</label>
+        <label for="nomeCompleto">Nome Completo</label>
         <input type="text" name="nomeCompleto" id="nomeCompleto">
      
         <label for="">E-mail</label>
@@ -90,11 +90,15 @@
         </datalist>
 
         <!-- checkbox lista de dados onde posso marcar vários itens -->
-        <input type="checkbox" name="cores[]" id="vermelho"><label for="vermelho" value="vermelho" checked>Vermelho</label>
+        <input type="checkbox" name="cores[]" id="vermelho" value="vermelho" checked disabled><label for="vermelho">Vermelho</label>
+
         <input type="checkbox" name="cores[]" id="amarelo" value="Amarelo"> <label for="amarelo">Amarelo</label>
+
         <input type="checkbox" name="cores[]" id="verde" value="Verde"> <label for="verde">Verde</label>
         <!-- tem que usar o [] para criar um array ali por conta que se não um substitui o outro 
-             checked deixa já seleciona quando abre o site/aba                                  -->
+             checked deixa já seleciona quando abre o site/aba                         
+            disabled faz com que fique bloqueada a resposta
+            -->
 
         <!-- radio permite a marcação de apenas um item da lista, desde que o name deles sejam iguais -->
         <br>   
@@ -112,7 +116,7 @@
              readonly -> apenas leitura (o campo é enviado)
              disable -> desabilita o campo (o campo não é enviado no formulário)
             -->
-            <input type="text" name="teste1" value="Valor fixo" required disable>
+            <input type="text" name="teste1" value="Valor fixo" required disabled>
         <br>
         
         <label for="">Valor minimo e máximo</label>
@@ -120,7 +124,7 @@
         
         <br>
         <label for="">Tamanho máximo de caracteres</label>
-        <input type="text" name="maximo" maxlength="8">
+        <input type="text" name="maximo" maxlength="15" minlength="8">
         
         
         <!-- campo submit -->
