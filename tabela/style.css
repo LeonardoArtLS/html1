@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cambio{
+    width: 600px;
+    background-color: #000;
+    border-spacing: 1px;
+    filter:saturate(130%)
+    /* Filtro para mudar as cores, bem legal de brincar */
+}
+.cambio td, .cambio th{
+    border:1px solid transparent; 
+    /* da para abreviar cores por exemplo o laranja q é #ff6600 para #f60 */
+    background-color: #fff;
+    padding:4px;
+    text-align: center;
+}
+
+/* .cambio td.left{
+    text-align:left;
+} */
+
+/* serve para selecionar o primeiro da lista */
+.cambio td:first-of-type{
+    text-align: left;
+}
+
+.cambio th{
+    background-color:#ff3a3a;
+}
+
+/* Regra do cor sim cor não (tabela listrada) */
+/* odd -> impar ou even -> par */
+
+.cambio tr:nth-child(odd) td{
+    background-color: rgb(255, 249, 215);
+}
