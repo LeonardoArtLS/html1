@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Lexend:wght@100;200;300;600;900&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT6h3EMdkt0BdgmxA5GJsHq1GdXgH5RYoOHFGoMjw0c2TQuq0Y";
+}
+
+body {
+    min-width: auto;
+    max-width: 1280px;
+    background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT6h3EMdkt0BdgmxA5GJsHq1GdXgH5RYoOHFGoMjw0c2TQuq0Y");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 40% 50%;
+}
+
+.esq {
+    background-color: rgb(238, 238, 238);
+    width: 35%;
+    padding: 139px 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.login {
+    padding: 0 0 20px 0;
+}
+.login2 {
+    padding: 0 0 20px 0;
+}
+.login2 #EsqueceuSenha{
+text-decoration:none;
+color:rgb(0, 132, 255);
+font-weight:700;
+padding: 0 0 0 200px;
+}
+.Entrar {
+    padding: 20px 0 20px 0;
+}
+#facalogin {
+    text-align: center;
+    padding: 60px 0 60px 0;
+}
+
+[type=email],
+[type=password] {
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    height: 30px;
+    width: 400px;
+    
+}
+
+[type=submit] {
+    padding: 8px 180px;
+    background-color: rgb(0, 136, 248);
+    color: white;
+    font-weight:700;
+}
+.naoTenhoConta a:link{
+    padding: 2px 150px;
+    background-color: rgb(220, 239, 255);
+    color: rgb(128, 128, 128);
+    font-weight:700;
+    text-decoration: none;
+}
+.dir {
+    width: 50%;
+    text-align: center;
+}
+
+.dir,
+.esq {
+    display: inline-block;
+}
