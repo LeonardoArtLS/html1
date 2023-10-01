@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Lexend:wght@100;200;300;600;900&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'section'
+        'footer';
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+        "navimg navlink";
+    padding: 10px 0 0 15px;
+    background-color: #ffa7a7;
+}
+
+.navimg {
+    grid-area: navimg;
+    width: 20vw;
+    height: 80px;
+}
+
+.navlink {
+    grid-area: navlink;
+    height: 50px;
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+header ul {
+    list-style: none;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 43px 30px 44px 30px;
+}
+
+.navlink a:hover {
+    background-color: rgb(255, 208, 138);
+    transition: 0.3s ease-in;
+}
+
+.header li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+.section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+        "noticias eventos dicas diversos";
+    padding: 150px 0 7px 50px;
+    height: 80vh;
+}
+.noticias h3,
+.dicas h3,
+.diversos h3,
+.eventos h3{
+    display: inline-block;
+    background-color: #46bddb;
+    padding: 4px 8px;
+    color: #fff;
+    margin-bottom: 4px;
+    font-family: 'Lexend', sans-serif;
+    box-shadow: 0 1px  rgba(0,0,0,0.4);
+    border-radius: 8px;
+    text-align:center;
+}
+#destaques h4{
+    min-height: 100px ;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,0.4);
+    text-align:center;
+    padding:20px 0 0 0;
+}
+#destaques a{
+    background-color: rgb(255, 54, 54);
+    padding: 8px 9vw;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration:none;
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,0.4);
+}
+
+.noticias {
+    grid-area: noticias;
+}
+
+.eventos {
+    grid-area: eventos;
+}
+
+.dicas {
+    grid-area: dicas;
+}
+
+.diversos {
+    grid-area: diversos;
+}
+
+.section h4 {
+    font-family: 'Roboto', sans-serif;
+    width: 20vw;
+}
+
+.section figure img {
+    width: 20vw;
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,0.4);
+}
+
+
+.footer {
+    background-color: rgb(255, 39, 32);
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+        'esquerda end direita'
+        'end end end';
+}
+
+.esquerda {
+    grid-area: esquerda;
+    text-align: center;
+    float: left;
+    width: 30vw;
+    padding: 50px 0 0 0;
+}
+
+.centro {
+    grid-area: centro;
+    text-align: center;
+    float: left;
+    width: 30vw;
+    padding: 50px 0 0 60px;
+}
+
+.direita {
+    grid-area: direita;
+    text-align: center;
+    float: left;
+    width: 30vw;
+    padding: 20px 0 0 0;
+}
+
+.direita ul li {
+    list-style: none;
+}
+
+.direita ul li a {
+    text-decoration: none;
+}
+
+.end {
+    grid-area: end;
+    text-align: center;
+    float: left;
+    width: 98.5vw;
+    padding: 0 0 10px 0;
+}
